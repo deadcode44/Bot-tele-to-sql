@@ -1,5 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 const mysql = require('mysql2');
+const token = process.env.TELEGRAM_BOT_TOKEN;
+require('dotenv').config();
 
 // Koneksi ke database
 const connection = mysql.createConnection({
